@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Сайт группы "Рича"</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="easterEgg">
+        <img src="images/Deti.png">
+    </div>
+    <div id="frame-1">
+        <img id="images-ti" src="images/main-back.png" alt="Фото людей связанных с группой">
+        <img id="darker" src="images/darker.png" alt="Темновой фильтр">
+        <div id="frame-1-text">
+            <h1 id="title-text">РиЧа</h1>
+            <h1 id="title-text-description">Сайт группы</h1>
+        </div>
+    </div>
+    <div id="frame-2">
+        <h1>Участники группы</h1>
+        <div id="humans">
+            <div id="Roman-block">
+                <img src="images/Roman-photo.png" alt="фото Романа" onclick="playRoman()">
+                <p id="member-descript"><span class="member-accent">Роман Татаринов</span> - главный и единственный музыкант группы, всё своё свободное время сидит в Рипере и ебашит на гитаре.</p>
+            </div>
+            <div id="Stepan-block">
+                <img src="images/Stepan-photo.png" alt="фото Степана" onclick="playStephtan()">
+                <p id="member-descript"><span class="member-accent">Степан Товашов</span> - главный и возможно единственный солист группы “РиЧа”. Его песни - это сплошная импровизация, оставляющая вопросы: что?, где?, почему плита?</p>
+            </div>
+            <div id="Ivan-block">
+                <img src="images/Ivan-photo.png" alt="фото Ивана">
+                <p id="member-descript"><span class="member-accent">Иван Матвеев</span> - человек, отвечающий за бэк-вокал. О его существовании можно узнать из строк: “Слеп, слеп. Ваня убери планшет пж”.</p>
+            </div>
+        </div>
+    </div>
+    <div id="frame-3">
+        <h1>Музыка</h1>
+        <div id="slider">
+            <div id="slide-line">
+                <div class="music-block">
+                    <div class="albom-block">
+                        <p>Альбом<p />
+                        <img src="images/first_albom.png" alt="Альбом: 3 парня, одна гитара">
+                        <h2>3 парня, одна гитара</h2>
+                    </div>
+                    <div class="records">
+                        <div>
+                            <h3>Скит от солиста</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/first_albom/Скит от солиста.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Измена</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/first_albom/Измена.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Игорь</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/first_albom/Игорь.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Какая-то херня на рандоме</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/first_albom/Какая-то херня на рандоме.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Мануфактура</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/first_albom/Мануфактура.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>15</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/first_albom/15.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-block">
+                    <div class="albom-block">
+                        <p>Альбом<p />
+                        <img src="images/second_albom.png" alt="Альбом: Hello, my name is революция">
+                        <h2>Hello, my name is революция</h2>
+                    </div>
+                    <div class="records">
+                        <div>
+                            <h3>Рича плиlove</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/Рича плиlove.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Рича пацанский реп</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/Рича пацанский реп.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Рича дурка #22</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/Рича дурка 22.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Рича крипер панк</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/Рича крипер панк.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Рича ревогубка</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/Рича ревогубка.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>РиЧа мячи (1 часть)</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/РиЧа мячи (1 часть).mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>РиЧа мячи(2 часть)</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/РиЧа мячи(2 часть).mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>РиЧа смысл жизни</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/second_albom/РиЧа смысл жизни .mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-block">
+                    <div class="albom-block">
+                        <p>Альбом<p />
+                        <img src="images/third_albom.png" alt="Альбом: Пошлая молли каравоке feat. ⁴БИЗОНА">
+                        <h2>Пошлая молли каравоке feat. ⁴БИЗОНА</h2>
+                    </div>
+                    <div class="records">
+                        <div>
+                            <h3>Дисс на рифму</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/Дисс на рифму.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Бутерброд</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/Бутерброд.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Дисс на рифму 2</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/Дисс на рифму 2.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>System.out.println(''любовь'')</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/System.out.println(''любовь'').mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Ссора двух геев</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/Ссора двух геев.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Маша</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/Маша.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Роман (бонус)</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/third_albom/Роман (бонус).mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-block">
+                    <div class="albom-block">
+                        <p>Альбом<p />
+                        <img src="images/fourth_albom.png" alt="Альбом: Аудио-поздравление Косте">
+                        <h2>Аудио-поздравление Косте</h2>
+                    </div>
+                    <div class="records">
+                        <div>
+                            <h3>83333</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fourth_albom/83333.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Задержка</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fourth_albom/Задержка.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Тряси</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fourth_albom/Тряси.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Должник</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fourth_albom/Должник.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>На щербете у Арбата</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fourth_albom/На щербете у Арбата.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-block">
+                    <div class="albom-block">
+                        <p>Альбом<p />
+                        <img src="images/fifth_albom.png" alt="Альбом: Нибовсем">
+                        <h2>Нибовсем</h2>
+                    </div>
+                    <div class="records">
+                        <div>
+                            <h3>нахуй</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fifth_albom/нахуй.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>менеме</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fifth_albom/менеме.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>новый</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fifth_albom/новый.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>ТУруТУ))</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fifth_albom/ТУруТУ)).mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Мало тебя.waw--=.цфм</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fifth_albom/Мало тебя.waw--=.цфм.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>ранетки</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/fifth_albom/ранетки.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-block">
+                    <div class="albom-block">
+                        <p>Альбом<p />
+                        <img src="images/sixth_albom.png" alt="Альбом: РиЧа (не вышедшее)">
+                        <h2>РиЧа (не вышедшее)</h2>
+                    </div>
+                    <div class="records">
+                        <div>
+                            <h3>83333 ремикс--online-audio-convert.com</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/sixth_albom/83333 ремикс--online-audio-convert.com.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Армейский шансон</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/sixth_albom/Армейский шансон.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>без-названия</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/sixth_albom/без-названия.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>НаЛа</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/sixth_albom/НаЛа.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>Песня с припевом</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/sixth_albom/Песня с припевом.mp3">
+                            </audio>
+                        </div>
+                        <div>
+                            <h3>1124047920849768580</h3>
+                            <audio controls preload="metadata">
+                                <source src="music/sixth_albom/1124047920849768580.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slide_buttons">
+            <input type="button" id="arrow_left" onclick="minusFunc()">
+            <input type="button" id="arrow_right" onclick="plusFunc()">
+        </div>
+    </div>
+    <div id="frame-4">
+        <h1>Мерч</h1>
+        <div id="frame-4-content">
+            <div id="merch-slider">
+                <img src="images/merch_1.png" id="merch-image" alt="фото футболки с принтом">
+                <div id="slide_buttons_merch">
+                    <input type="button" id="arrow_left" onclick="slide_merch_left()">
+                    <input type="button" id="arrow_right" onclick="slide_merch_right()">
+                </div>
+            </div>
+            <div id="description-of-the-merch">
+                <ul>
+                    <li><p>Матерья..............................Хлопок</p></li>
+                    <li><p>Цвет......................................Белый</p></li>
+                    <li><p>Назначение.......................Для повседневного ношения</p></li>
+                    <li><p>Размер.................................49°C</p></li>
+                </ul>
+                <input type="button" id="bye-merch" value="Купить" onclick="buy_button_animation()">
+            </div>
+        </div>
+    </div>
+    <div id="frame-5">
+        <h1>Отзывы</h1>
+        <div id="frame-5-content">
+            <input type="button" id="arrow_left" onclick="slide_feedback_left()">
+            <div id="frame-5-feedback">
+                <div id="feedback-block">
+                    <div class="feedback-full-element">
+                        <p>
+                            Блять, ебаная Чича Рича. У меня новая глава в жизни появилась вместе с треками этой группы. Так что я олд типа да.
+                            Если писать прям искренне, то группа и её песни многое значат для меня. Потому что это одна большая история в названиях и текстах, датах и фотографиях.
+                            Это нечто экстраординарное и не похожее ни на что другое в этом мире. Мега кринжовое и одновременно какая же это имба сука. Рича хранит в себе огромное количество локальных мемов,
+                            которые в прикол пихать даже туда, где они неуместны. Некоторые песни заедают в голове так же надолго, как «Плачу на техно» и ты просто идёшь и поёшь эту парашу, которую ты без проблем
+                            запомнил лучше чем солист. И самое главное без текста перед глазами, потому что ты баран с промытыми мозгами. Для меня большая честь наблюдать за развитием этого детища и делать какую либо
+                            забавную мелочь для него по типу футболки с чихуахуа и обработки мувика с двумя резиновыми педиками. Говоря о звучании. Пиздите что хотите, butt я считаю это скорее музыкальным
+                            направлением-бессмысленные песни. Треки чаще всего именно с родным кринж текстом и ахуенными битами/музыкой/музыкальным сопровождением (называйте как хотите, а мы уважаем легендарного гитариста).
+                            На записи некоторых песен я присутствовала лично. Скажу так: В живую слушать ещё сука смешнее, чем потом после минимальной обработки.
+                            В целом группа хуйня позорная, потому что мы тупые завистники и шахтеры безолаберно относятся к своей работе.
+                            Так же от лица Марии Фельцман хочу добавить что Стёпа жрёт щебёнку🖕🖕🖕
+                        </p>
+                        <div class="feedback-icon">
+                            <h5>Сонечка не муррашкина</h5>
+                            <img src="images/сонечк.jpg">
+                        </div>
+                    </div>
+                    <div class="feedback-full-element">
+                        <p>Рича - охуенная группа, если вы конченый аутист, т.к даже ебанутый авангард или конченый нойзкор будет куда лучше звучать, чем эта поебень</p>
+                        <div class="feedback-icon">
+                            <h5>Констинстрой</h5>
+                            <img src="images/Констинстрой.jpg">
+                        </div>
+                    </div>
+                    <div class="feedback-full-element">
+                        <p>
+                            Данная группа очень экспериментальная, и достаточно экстравагантная.
+                            Песни этой чудесной группы, вызывают у меня помимо рвотных позывов, ещё и некоторые вопросы. На которые ответ мне не даст не мой больной мозг, не друзья которые так же слушали эти песни, так и сами музыканты. В их песнях настолько глубокий смысл, что даже ебучая бригада, да что там, три бригады шахтёров не смогут до него добраться.
+                            Если вы спросите меня: "есть ли песни группы у тебя в плейлисте?"
+                            То я отвечу: "нет."
+                            Но! Ведь, я все лишь какое-то никчёмное подобие на человека в клоунской маске. возможно вам- уникальным и интересным личностям, понравится данный вид экспериментального искусства! (Что отменит всё сказанное о вас)
+                            Желаю приятного прослушивания, ваш "клоун-Ярік".
+                        </p>
+                        <div class="feedback-icon">
+                            <h5>Клоун-Ярік</h5>
+                            <img src="images/Клоун-Ярік.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" id="arrow_right" onclick="slide_feedback_right()">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-links">
+            <div id="first-section-footer">
+                <h3><a href="https://vk.com/0e2c210e2e1b0e2e190e2e2d140e2c1f">Версталл сайт: какой-то дебил</a></h3>
+                <h3><a href="https://vk.com/0e2c210e2e1b0e2e190e2e2d140e2c1f">Занимался backend-ом: тот же урод</a></h3>
+                <h3><a href="https://vk.com/0e2c210e2e1b0e2e190e2e2d140e2c1f">Дизайнил: человек без вкуса</a></h3>
+            </div>
+            <h3>Благодарочка <b>@MURREYWR</b>, <b>@chelochnikk</b>, <b>@Babiusss</b></h3>
+        </div>
+        <h2><a href="https://t.me/richa2022">Специально для недопонятых гениев из группы РиЧа</a></h2>
+        <p onclick="achivment()">Дети</p>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

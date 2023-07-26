@@ -1,0 +1,517 @@
+body {
+    margin: 0px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+#easterEgg {
+    position: fixed;
+    z-index: 1;
+    left: -796px;
+}
+
+#frame-1 {
+    display: flex;
+    height: 969px;
+    justify-content: center;
+}
+
+#images-ti {
+    position: absolute;
+    width: 1903px;
+    height: 969px;
+}
+
+#darker {
+    position: absolute;
+    opacity: 0%;
+    width: 1903px;
+    height: 969px;
+    animation: OpasAnim 2s ease forwards;
+}
+
+#frame-1-text {
+    display: flex;
+    margin-top: 320px;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    width: 523px;
+    height: 286px;
+    z-index: 3;
+}
+
+#title-text {
+    margin: 0px;
+    font-size: 210px;
+    font-weight: 400;
+    height: 233px;
+    opacity: 0%;
+    animation: OpasAnim 2s ease forwards;
+}
+
+#title-text-description {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 49px;
+    opacity: 0%;
+    animation: OpasAnim 2s ease forwards;
+}
+
+#frame-2 {
+    display: flex;
+    height: 969px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #232323;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 79px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+#humans {
+    display: flex;
+    width: 1898px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#Roman-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 434px;
+}
+
+#Roman-block img {
+    width: 368px;
+    cursor: pointer;
+}
+
+#Stepan-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 470px;
+}
+
+    #Stepan-block img {
+        width: 368px;
+        cursor: pointer;
+    }
+
+#Ivan-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 474px;
+}
+
+#Ivan-block img {
+    width: 368px;
+}
+
+.member-accent {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+#member-descript {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+#frame-3 {
+    display: flex;
+    height: 969px;
+    background-color: #232323;
+    align-items: center;
+    flex-direction: column;
+}
+
+#frame-3 h1 {
+    margin-bottom: 24px;
+}
+
+#slider {
+    display: flex;
+    width: 1350px;
+    overflow: hidden;
+}
+
+#slide-line {
+    display: flex;
+    flex-direction: row;
+    width: 8100px;
+    position: relative;
+    left: 0px;
+    transition: ease 0.5s;
+}
+
+.music-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1350px;
+}
+
+.albom-block {
+    display: flex;
+    flex-direction: column;
+    height: 690px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .albom-block h2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 45px;
+        color: #FFFFFF;
+        margin: 0px;
+    }
+
+.albom-block p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.records {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 690px;
+}
+
+    .records h3 {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 45px;
+        color: #FFFFFF;
+        margin: 0px;
+    }
+
+audio {
+    width: 500px;
+    height: 30px;
+}
+
+#slide_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 100px;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#slide_buttons input {
+    transition: 0.5s;
+}
+
+#arrow_left {
+    all: initial;
+    width: 45px;
+    height: 83px;
+    background-image: url(../images/arrow_left.png);
+    cursor: pointer;
+}
+
+#arrow_right {
+    all: initial;
+    width: 45px;
+    height: 83px;
+    background-image: url(../images/arrow_right.png);
+    cursor: pointer;
+}
+
+#frame-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 969px;
+    background-color: #232323;
+}
+
+#frame-4-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 700px;
+    width: 1150px;
+}
+
+#slide_buttons_merch {
+    width: 346px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#merch-slider {
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#description-of-the-merch {
+    height: 710px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #description-of-the-merch ul {
+        list-style-type: none;
+        margin-top: 5px;
+    }
+
+    #description-of-the-merch p {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 45px;
+        color: #FFFFFF;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+#bye-merch {
+    width: 300px;
+    height: 80px;
+    border: 6px solid #313131;
+    background: #545454;
+    border-radius: 8px;
+    color: white;
+    font: 100 25px 'Merriweather';
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+#frame-5 {
+    display: flex;
+    height: 969px;
+    background-color: #232323;
+    flex-direction: column;
+    align-items: center;
+}
+
+#frame-5-content {
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    justify-content: space-between;
+}
+
+#frame-5-feedback {
+    height: 650px;
+    width: 1000px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    border: 6px solid #313131;
+    border-radius: 8px;
+    background-color: #101010;
+    overflow: hidden;
+}
+
+#feedback-block {
+    display: flex;
+    width: 3060px;
+    position: relative;
+    left: 0px;
+    justify-content: space-between;
+    transition: 0.5s ease;
+}
+
+.feedback-full-element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 620px;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.feedback-full-element p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: white;
+    font: 100 18px 'Comfortaa';
+}
+
+.feedback-icon {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-icon h5 {
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+}
+
+    .feedback-icon img {
+        border: 3px solid #313131;
+        border-radius: 90px;
+        margin-left: 5px;
+    }
+
+#footer {
+    height: 200px;
+    background: #161616;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#first-section-footer {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+}
+
+#footer h2 {
+    margin-top: 0px;
+    color: white;
+    font: 100 25px 'Merriweather';
+}
+
+#footer h3 {
+    margin-top: 0px;
+    color: white;
+    font: 100 16px 'Merriweather';
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    align-items: center;
+}
+
+#footer p {
+    position: absolute;
+    left: 0px;
+    margin-top: 180px;
+    color: #161616;
+    font: 100 30px 'Merriweather';
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#arrow_right:hover {
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+#arrow_right:active {
+    filter: brightness(10%);
+    transition: 0.02s;
+}
+
+#arrow_left:hover {
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+#arrow_left:active {
+    filter: brightness(10%);
+    transition: 0.02s;
+}
+
+#slide_buttons_merch input:hover {
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+#slide_buttons_merch input:active {
+    filter: brightness(10%);
+    transition: 0.02s;
+}
+
+#bye-merch:hover {
+    background-color: #222222;
+}
+
+#merch-image {
+    transition: ease 0.5s;
+}
+
+a:hover {
+    filter: brightness(20%);
+}
+
+#footer p:hover {
+    color: white;
+}
+
+@keyframes OpasAnim {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%
+    }
+}
+
+@keyframes buy_button {
+    25% {
+        transform: translateX(30px);
+        background-color: #4B2424;
+    }
+    75% {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes achivmentAnim {
+    25% {
+        left: 0px;
+    }
+    75% {
+        left: 0px;
+    }
+}

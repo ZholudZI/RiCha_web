@@ -1,5 +1,5 @@
 "use strict";
-var leftstyleAlbom = 0, image_number = 1, leftstyleFeedBack = 0;
+var leftstyleAlbom = 0, image_number = 1, leftstyleFeedBack = 0, achivmentTester = true;
 const slider_line = document.getElementById("slide-line"), merch_image = document.getElementById("merch-image"), buy_button = document.getElementById("bye-merch"), feedback_slider = document.getElementById("feedback-block"),
     audio = new Audio("sounds/tube_falling.mp3"), Roman = new Audio("sounds/Roman.mp3"), Stephtan = new Audio("sounds/Stephtan.mp3"), deti = document.getElementById("easterEgg"), achivment_sound = new Audio("sounds/achivment.mp3");
 
@@ -70,8 +70,11 @@ function playStephtan() {
 }
 
 function achivment() {
-    deti.style.animation = "5s ease achivmentAnim";
-    setTimeout(() => achivment_sound.play(), 350);
+    if (achivmentTester) {
+        deti.style.animation = "5s ease achivmentAnim";
+        setTimeout(() => achivment_sound.play(), 350);
+        achivmentTester = false;
+    }
 }
 
 /*function slide_merch_left() {

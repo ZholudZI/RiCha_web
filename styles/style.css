@@ -23,7 +23,7 @@ a {
 
 #frame-1 {
     display: flex;
-    height: 969px;
+    height: 954px;
     max-width: 1903px;
     justify-content: center;
     overflow: hidden;
@@ -31,15 +31,16 @@ a {
 
 #images-ti {
     position: absolute;
-    width: 1903px;
-    height: 969px;
+    max-height: 969px;
+    height: 100%;
+    width: 100%;
 }
 
 #darker {
     position: absolute;
     opacity: 0%;
-    width: 1903px;
-    height: 969px;
+    width: 100%;
+    height: 100%;
     animation: OpasAnim 2s ease forwards;
 }
 
@@ -75,7 +76,7 @@ a {
 
 #frame-2 {
     display: flex;
-    height: 969px;
+    min-height: 969px;
     flex-direction: column;
     align-items: center;
     background-color: #232323;
@@ -89,13 +90,15 @@ h1 {
     line-height: 79px;
     color: #FFFFFF;
     margin-top: 10px;
+    text-align: center;
 }
 
 #humans {
     display: flex;
-    width: 1898px;
+    width: 100%;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 #Roman-block {
@@ -106,7 +109,8 @@ h1 {
 }
 
 #Roman-block img {
-    width: 368px;
+    max-width: 368px;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -118,7 +122,8 @@ h1 {
 }
 
     #Stepan-block img {
-        width: 368px;
+        max-width: 368px;
+        width: 100%;
         cursor: pointer;
     }
 
@@ -129,9 +134,10 @@ h1 {
     width: 474px;
 }
 
-#Ivan-block img {
-    width: 368px;
-}
+    #Ivan-block img {
+        max-width: 368px;
+        width: 100%;
+    }
 
 .member-accent {
     font-family: 'Open Sans';
@@ -141,7 +147,7 @@ h1 {
     line-height: 49px;
 }
 
-#member-descript {
+.member-descript {
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 300;
@@ -164,7 +170,8 @@ h1 {
 
 #slider {
     display: flex;
-    width: 1350px;
+    max-width: 1350px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -215,6 +222,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
     height: 690px;
 }
 
@@ -229,14 +238,16 @@ h1 {
     }
 
 audio {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 30px;
 }
 
 #slide_buttons {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     height: 100px;
     flex-direction: row;
     margin-top: 50px;
@@ -266,7 +277,8 @@ audio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 969px;
+    min-height: 969px;
+    height: 100%;
     background-color: #232323;
 }
 
@@ -274,8 +286,11 @@ audio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 700px;
-    width: 1150px;
+    min-height: 700px;
+    height: 100%;
+    max-width: 1150px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 #slide_buttons_merch {
@@ -293,8 +308,10 @@ audio {
 }
 
 #description-of-the-merch {
-    height: 710px;
+    max-height: 710px;
     display: flex;
+    max-width: 639px;
+    width: 100%;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
@@ -515,5 +532,33 @@ a:hover {
     }
     75% {
         left: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #frame-1 {
+        height: 740px;
+    }
+
+    #title-text {
+        font-size: 110px;
+        height: 150px;
+    }
+
+    #images-ti {
+        content: url(../images/main-back-small.png);
+    }
+
+    #humans {
+        text-align: center;
+    }
+
+    .member-descript {
+        font-size: 22px;
+        padding: 0px 8px 0px 5px;
+    }
+
+    .member-accent {
+        font-size: 30px;
     }
 }
